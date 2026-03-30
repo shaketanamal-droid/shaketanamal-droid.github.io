@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+    body {
+        background: #f1f1f1;
+        color: 070707;  
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+        background: #303030;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    .navbar-brand:hover {
+        color: #ff4500 !important;
+    }
+
+    .nav-link {
+        color: white !important;
+        margin-left: 15px;
+    }
+
+    .nav-link:hover {
+        color: #ff4500 !important;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .home-image img {
+        width: 500px;
+        height: 500px;
+        padding: 7px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 6px 15px #f8865c;
+        position: relative;
+        z-index: -2;
+    }
+    @media (max-width: 767px) {
+        .home-image img {
+            height: 350px;
+            width: 350px;
+        }
+    }
+    .card {
+        border-radius: 15px;
+        box-shadow: 0 6px 15px #fa9f7e;
+        border: 2px solid #ff4500;
+    }
+
+    .tag {
+        background: #5e5e5e;
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin: 3px;
+        display: inline-block;
+        font-size: 12px;
+        color: #f1f1f1;
+    }
+
+    .btn-custom {
+        background: #ff4500;
+        color: white;
+        border: none;
+    }
+    .btn-custom:hover {
+        border: 2px solid #ff4500;
+        color: #ff4500;
+    }
+
+    footer {
+        background: #303030;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 -4px 10px rgba(0,0,0,0.5);
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand text-white fw-bold" href="#">Cyrus Yu</a>
+
+        <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            ☰
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#profile">Profile</a></li>
+                <li><a class="nav-link" href="#tech">Tech Stack</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#webinars">Webinars</a></li>
+                <li><a class="nav-link" href="#org">Organization</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="text-center">
+    <div class="container">
+        <h1 class="fw-bold">Welcome to My Portfolio</h1>
+        <p>Crafting the digital future, one line at a time</p>
+        <a href="#projects" class="btn btn-custom">Explore Projects</a>
+    </div>
+</section>
+
+<!-- PROFILE -->
+<section id="profile">
+    <div class="container">
+        <h2 class="mb-4">Profile</h2>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+            <div class="home-image text-center">
+                <img src="cy.jpeg" alt="">
+            </div>
+        </div>
+        <div class="card p-4">
+            <p>I'm Cyrus Yu, a deeply motivated individual who has a desire and energy to learn more in computer programming. This desire comes from enjoying the challenge of coding or wanting to make a difference in the world. Learning new skills and working with others boosts my motivation and make programming even more fun. I have joined some programming webinars and through out all of that, I have discovered new things and found new friends. For me, when you enjoy what you do, it makes things easier and more exciting. Just need to stay curious and passionate in my programming skill and in no time, will eventually lead me to success and hopefully more opportunities.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="tech">
+    <div class="container">
+        <h2 class="mb-4">Tech Stack</h2>
+        <div class="card p-4">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">C#</span>
+            <span class="tag">Database</span>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <h2 class="mb-4">Projects</h2>
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Game Development</h5>
+                    <p>Creating, designing, building, and releasing video games.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h5>Web Development</h5>
+                    <p>Responsive webpage designs with modern UI features.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- WEBINARS -->
+<section id="webinars">
+    <div class="container">
+        <h2 class="mb-4">Webinars & Certifications</h2>
+
+        <div class="card p-3 mb-3">
+            <h5>Technical Training</h5>
+            <p>Completed training focused on system applications and tools.</p>
+        </div>
+
+        <div class="card p-3">
+            <h5>IT Seminar</h5>
+            <p>Participated in discussions about current technology trends.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- ORGANIZATION -->
+<section id="org">
+    <div class="container">
+        <h2 class="mb-4">Organization</h2>
+        <div class="card p-4">
+            <p>Actively participating in IT webinars, organizations and academic meetings.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <h2 class="mb-4">Contact Me</h2>
+
+        <div class="card p-4">
+            <form onsubmit="showAlert(event)">
+                <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+                <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+                <textarea class="form-control mb-3" placeholder="Message" required></textarea>
+                <button class="btn btn-custom">Send</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Portfolio Website | All Rights Reserved</p>
+</footer>
+
+<script>
+function showAlert(event) {
+    event.preventDefault();
+    alert("Message sent successfully!");
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
